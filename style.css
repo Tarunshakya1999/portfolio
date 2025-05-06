@@ -1,0 +1,221 @@
+*
+{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "helvetica";
+}
+
+.portfolio-container
+{
+    min-height: 100vh;
+    width:100%;
+    display: flex;
+}
+
+.navlist
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    
+}
+.navlist li
+{
+    list-style: none;
+
+}
+
+.navlist li a 
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+
+.left-container , .right-container
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.left-container
+{
+    background-color: #262525;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+
+.right-container
+{
+    background:linear-gradient(-45deg,#3877ff, #262525  70%);
+    width: 30%;
+   
+}
+
+.icons .fa-brands
+{
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+
+
+}
+.icons
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content
+{
+    margin-left: 4rem;
+}
+.intro
+{
+    font-size: 1.5rem;
+    color: #fff;
+}
+h1
+{
+    font-size: 4rem;
+    color:deepskyblue;
+}
+
+span
+{
+    color: deepskyblue;
+}
+
+.detail
+{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    text-align: justify;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+
+
+#button1
+{
+   
+    border: 3px solid deepskyblue;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem ;
+    text-decoration: none;
+    border-radius: .5rem;
+    background-color: deepskyblue;
+    transition: all 0.4s ease;
+    color: black;
+    
+}
+
+#button2
+{
+   
+    border: 3px solid deepskyblue;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem ;
+    text-decoration: none;
+    border-radius: .5rem;
+    background: transparent;
+    color: deepskyblue;
+    margin-left: 2rem;
+    transition: all 0.4s ease;
+}
+
+#button1:hover
+{
+   background: transparent;
+   color: deepskyblue;
+}
+
+
+#button2:hover
+{
+   background: deepskyblue;
+   color: #000;
+}
+
+.icons .fa-brands:hover
+{
+    background-color:dodgerblue;
+}
+
+.design .circle
+{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    left:70%;
+    transform: translate(-50%,-50%);
+}
+
+.circle:nth-child(1)
+{
+    background: linear-gradient(90deg , transparent 50% , #262525 50% );
+    width: 38rem;
+   
+}
+
+.circle:nth-child(2)
+{
+   
+    width: 30rem;
+    padding: 0;
+   
+    
+}
+
+
+img
+{
+    background-size: cover;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    box-shadow: 0 0 2rem #fff , inset 0 0 1rem #fff , 0 0 2rem #3877ff;
+   
+
+}
+
+.navlist li a::after
+{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform .5s ;
+
+}
+
+.navlist li a:hover::after
+{
+    transform: scale(1);
+    transform-origin: bottom left;
+}
